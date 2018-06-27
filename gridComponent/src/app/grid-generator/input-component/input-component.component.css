@@ -1,3 +1,5 @@
+/* container for first div iterator */
+
 .mainContainer {
     display: flex;
     height: auto;
@@ -8,6 +10,8 @@
     /* justify-content: center; */
 }
 
+/* div element styling */
+
 .divElm{
     border: 10px solid black;
     width: 50px;
@@ -16,15 +20,17 @@
     margin:10px 10px;
 }
 
-.secondDivElm{
+
+
+/* .secondDivElm{
     border: 10px solid black;
     width: 50px;
     height: 50px;   
     background-color:  #888;
     margin:0 auto;
-}
+} */
 
-
+/* media queries */
 
 @media(max-width: 500px){
     .divElm{
