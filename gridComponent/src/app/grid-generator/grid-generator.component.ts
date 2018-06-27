@@ -11,5 +11,18 @@ export class GridGeneratorComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  
+  //component variables
+  nofBlocks:number;
+  nofBlocksinRow:number;
+  blockCount:number = 0;
+  rowCount:number = 0;  
+  
+  //component functions
+  pushData(){
+    this.blockCount = this.nofBlocks;
+    this.rowCount = this.nofBlocksinRow;
+  }
 
 }

@@ -1,37 +1,19 @@
 <div class="container">
+  <h1>Grid Generator</h1>
     <div class="loginContainer">
-      <p
-      class="blockInputPara"
-      >
-        Please enter the no of required blocks
-      </p>
-  
-      <input
-      class="blockInput"
-      [(ngModel)]="nofBlocks"
-      >
-      
-      <p
-      class="blocksPRowPara"
-      >
-        Please enter required blocks per row
-      </p>
-  
-      <input
-      class="blocksPRowInput"
-      [(ngModel)]="nofBlocksinRow"
-      >
-      
-      <button
-      class="submitBtn"
-      (click)="pushData()"
-      >
-      Generate Component
+        Enter the required blocks   <input type="text" [(ngModel)]="nofBlocks"><br><br>
+        Enter no of blocks in a row <input type="text" [(ngModel)]="nofBlocksinRow"><br><br>
+        <button
+        (click)="pushData()"
+        >Generate Grid
       </button>
     </div>
     
     <div class="gridContainer">
-      <app-input-component>
+      <app-input-component
+      [blockCount]="blockCount"
+      [blocksPRow]="rowCount"
+      >
         
       </app-input-component>
     </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-input-component',
@@ -12,17 +12,8 @@ export class InputComponentComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  //component variables
-  nofBlocks:number;
-  nofBlocksinRow:number;
-  blockCount:number = 0;
-  rowCount:number = 0;
-
-  //component functions
-  pushData(){
-    this.blockCount = this.nofBlocks;
-    this.rowCount = this.nofBlocksinRow;
-  }
+  //Component Attributes
+  @Input() blockCount;
+  @Input() blocksPRow;
 
 }
