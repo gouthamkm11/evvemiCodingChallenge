@@ -1,0 +1,53 @@
+/* Login Container Layout 
+
+.loginContainer{
+    display: grid;
+    grid-template-areas: 
+    'blockInputPara blockInput'
+    'blocksPRowPara blocksPRowInput';
+}
+
+/* .loginContainer h1{
+    
+} */
+
+
+/* Login Container Contents */
+/* .blockInputPara{
+    grid-area:blockInputPara;
+    display: block;
+}
+
+.blocksPRowPara{
+    grid-area:blocksPRowPara; 
+    display: block;
+}
+
+.blockInput{
+    grid-area: blockInput;
+}
+
+.blocksPRowInput{
+    grid-area: blocksPRowInput;
+}
+
+.submitBtn{
+    grid-area: submitBtn;
+} */ 
+
+
+/* main container */
+
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

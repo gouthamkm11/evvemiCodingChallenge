@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="loginContainer">
+      <p
+      class="blockInputPara"
+      >
+        Please enter the no of required blocks
+      </p>
+  
+      <input
+      class="blockInput"
+      [(ngModel)]="nofBlocks"
+      >
+      
+      <p
+      class="blocksPRowPara"
+      >
+        Please enter required blocks per row
+      </p>
+  
+      <input
+      class="blocksPRowInput"
+      [(ngModel)]="nofBlocksinRow"
+      >
+      
+      <button
+      class="submitBtn"
+      (click)="pushData()"
+      >
+      Generate Component
+      </button>
+    </div>
+    
+    <div class="gridContainer">
+      <app-input-component>
+        
+      </app-input-component>
+    </div>
+  </div>
