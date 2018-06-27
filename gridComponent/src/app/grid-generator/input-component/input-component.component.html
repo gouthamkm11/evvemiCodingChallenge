@@ -3,11 +3,11 @@ style="border: 2px solid black; margin:0 auto;padding: 25px"
 >
 <div
 class="mainContainer"
-*ngFor="let dummy of ' '.repeat(blockCount/blocksPRow).split(''), let x = index"
+*ngFor="let val of ' '.repeat(blockCount/blocksPRow).split(''), let x = index"
 >
   <div
   class="divElm"
-  *ngFor="let dummy of ' '.repeat(blocksPRow).split('')"
+  *ngFor="let val of ' '.repeat(blocksPRow).split('')"
   appClickMe
   >
   </div>
@@ -18,7 +18,7 @@ class="mainContainer"
   >
     <div
     class="divElm"
-    *ngFor="let dummy of ' '.repeat(blockCount % blocksPRow).split('')"
+    *ngFor="let val of ' '.repeat(blockCount % blocksPRow).split('')"
     appClickMe
     >
 
